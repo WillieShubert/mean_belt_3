@@ -1,0 +1,21 @@
+<div ng-controller = 'appointmentsController'>
+  <form class= 'container' ng-submit='createAppointment()'>
+    <div class="form-group row">
+      <label for="date-input">Date</label>
+      <input  ng-model="newAppointment.appointment_date" type="Date" class="form-control" id="date-input">
+    </div>
+    <div class="form-group row">
+      <label for="time-input" class="col-2 col-form-label">Appointment Time</label>
+      <div class="col-10">
+        <input ng-model="newAppointment.appointment_time" class="form-control" type="time" id="time-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="description-input" class="col-2 col-form-label">Complaint</label>
+        <div class="col-10">
+      <input class="form-control" type="text" id="description-input">
+      </div>
+    </div>
+    <input type="submit"><br>
+  </form>
+</div>
